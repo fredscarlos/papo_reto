@@ -1,0 +1,549 @@
+/* GLOBAL */
+body {
+  margin: 0px;
+  color: #000000;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+blockquote,
+dd {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* COMPONENTES */
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CORES */
+:root {
+  --cor-branco: #ffffff;
+  --cor-bege: #EBE1CE;
+  --cor-azul-P: #0050FF;
+  --cor-azul-F: #00165A;
+  --cor-cinza: #424242;
+  --cor-cinza-fraco: #C7C8CC;  
+  --cor-amarelo: #FFAF00;  
+}
+
+.cor-branco {
+  color: var(--cor-branco);
+}
+
+.cor-bege {
+  color: var(--cor-bege);
+}
+
+.cor-azul-P {
+  color: var(--cor-azul-P);
+}
+
+.cor-azul-F {
+  color: var(--cor-azul-F);
+}
+
+.cor-cinza {
+  color: var(--cor-cinza);
+}
+
+.cor-cinza-fraco {
+  color: var(--cor-cinza-fraco);
+}
+/* FIM CORES */
+
+/* FONTES */
+.font-1-x-400 {
+  font-weight: 400;
+  font-size: 1.875rem;
+}
+
+.font-1-x-800 {
+  font-weight: 800;
+  font-size: 1.875rem;
+}
+
+.font-1-xs-400 {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.font-1-xs-800 {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.font-2-l-800 {
+  font-family: "Source Serif";
+  font-weight: 800;
+  font-size: 3rem;
+}
+/* FIM FONTES */
+
+/* BOTÃO */
+.btn-01 {
+  display: block;
+  max-width: fit-content;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--cor-azul-P);
+  border-radius: 20px;
+  border: solid 7px var(--cor-branco);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-02 {
+  display: block;
+  max-width: fit-content;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: var(--cor-amarelo);
+  border-radius: 20px;
+  border: solid 7px var(--cor-branco);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+/* FIM BOTÃO */
+
+/* HOME */
+.home-bg {
+  background-image: url("https://d335luupugsy2.cloudfront.net/cms/files/34983/1658434009/$dnd3d8syyjw");
+  background-color: var(--cor-azul-F);
+  background-attachment: fixed;
+}
+
+.home {
+  padding-top: 100px;
+}
+
+.home img {
+  margin: 0px auto;
+}
+
+.home p {
+  font-size: 2rem;
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.home-profes img{
+  width: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0px auto;
+}
+/* FIM HOME */
+
+/* TARJA */
+.tarja {
+  border: solid 1px var(--cor-azul-P);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.tarja p {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.tarja p>span {
+  font-weight: 800;
+}
+/* FIM TARJA */
+
+/* PAPO */
+.papo-bg {
+  background-image: url("https://d335luupugsy2.cloudfront.net/cms/files/34983/1658434009/$j7eqz13sjy");
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px 0px;
+}
+
+.papo-note {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.papo-pprt {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.papo-quero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.papo-quero a {
+  transition: 0.3s;
+}
+
+.papo-quero a:hover{
+  background-color: var(--cor-amarelo);
+}
+/* FIM PAPO */
+
+/* RAZOES */
+.razoes-bg {
+  background-image: url("https://d335luupugsy2.cloudfront.net/cms/files/34983/1658434009/$dnd3d8syyjw");
+  background-color: var(--cor-azul-F);
+  background-attachment: fixed;
+  padding: 50px 0px;
+}
+
+.razoes-titulo {
+  text-align: center;
+}
+
+.razoes-titulo h1 {
+  font-size: 4rem;
+}
+
+.razoes-titulo p {
+  padding-top: 10px;
+}
+
+#razoes-mob {
+  display: none;
+}
+
+/* FIM RAZOES */
+
+/* DICAS */
+.dicas-bg {
+  background-image: url("https://d335luupugsy2.cloudfront.net/cms/files/34983/1658434009/$j7eqz13sjy");
+  padding: 50px 0px;
+  background-attachment: fixed;
+}
+
+.dicas-titulo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.dicas-titulo p {
+  padding-top: 50px;
+}
+
+.dicas-titulo a {
+  transition: 0.3s;
+}
+
+.dicas-titulo a:hover {
+  background-color: var(--cor-azul-P);
+}
+/* FIM DICAS */
+
+/* DEPOIMENTO */
+
+.depoimentos-bg {
+  background-color: #003399;
+  padding: 50px 0px;
+}
+
+.depoimentos-topo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.depoimentos-topo h2 {
+  max-width:550px;
+  color:#fff;
+  font-size: 36px;
+  line-height: 2.75rem;
+  margin-bottom:20px;
+}
+.depoimentos-topo p {
+  color:#fff;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+.depoimentos-topo span {
+  font-size: 2.5rem;
+}
+
+.depoimentos-topo h4 {
+  text-align: left;
+  font-weight: 300;
+}
+
+.depoimentos-topo a {
+  color: #e3eeff;
+  display: flex;
+  border-bottom: 1px solid;width: 190px;line-height: 1.2;padding-bottom: 10px;margin-top: 20px;
+}
+
+.depoimentos-alunos {
+  margin-top: 30px;
+  border-top: solid #6AA9FF 1px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.depoimentos-alunos li {
+  color: #003399;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.depoimentos-alunos li p {
+  font-style: italic;
+}
+
+.depoimentos-alunos li stronger {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+/* FIM DEPOIMENTOS */
+
+
+/* EXPERIENCIA CEISC */
+  .experiencia {
+    padding: 50px 0px;
+  }
+
+  .titulo {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      padding: 0px 150px;
+  }
+
+    .titulo p {
+      text-align: center;
+      color: #A9A9BC;
+      font-size: .875rem;
+      font-weight: 600px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .titulo h2 {
+      text-align: center;
+      color: #212529;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 2.25rem;
+      margin-bottom: 30px;
+    }
+
+    .conteudo {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 40px;
+    }
+
+    .conteudo li>p,
+    .conteudo li>h3 {
+      text-align: center;
+    }
+
+    .conteudo h3 {
+padding-bottom: 10px;
+    }
+
+    .conteudo p {
+      font-size: 1rem;
+    }
+
+    .icone {
+      display: grid;
+      justify-content: center;
+      grid-template-rows: 110px;
+    }
+
+    @media (max-width: 800px) {
+      .titulo {
+        padding: 0px;
+      }
+      .conteudo {
+        grid-template-columns: 1fr;
+        padding: 0px 30px;
+      }
+      .conteudo p {
+        font-size: 1.25rem;
+      }
+    }
+
+/* END EXPERIENCIA CEISC */
+
+/* FOOTER */
+  .footer-bg {
+    background-color: #fafafa;
+  }
+
+  .footer {
+    color: #808080;
+    font-size: 12px;
+    padding-bottom: 3rem!important;
+    padding-top: 3rem!important;
+    display: block;
+    font-family: Montserrat;
+  }
+
+  .footer-head {
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid var(--cor-cinza);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+
+  .footer-head h1 {
+    font-size: 16px;
+    margin-right:20px;
+    color:#000;
+  }
+
+  .footer-head a {
+    color:#000;
+    margin-right:15px;
+  }
+
+  .footer-head svg {
+    width: 30px;
+    transition: 0.3s;
+  }
+
+  .footer-head svg:hover {
+    color: #6AA9FF;
+  }
+
+  .footer-body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer-body h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .footer-body li {
+    padding-top: 10px;
+  }
+
+  .footer-body a {
+    transition: 0.3s;
+  }
+
+  .footer-body a:hover {
+    color: #6AA9FF;
+  }
+
+  .footer-body img {
+    max-width:180px;
+  }
+
+  .btn-social img {
+    margin: 0px auto;
+  }
+
+  .btn-social h2 {
+    text-align: center;
+  }
+
+  .footer-copy {
+    border-top: 1px solid var(--cor-cinza);
+    margin-top: 30px;
+    padding-top: 50px;
+    text-align: center;
+  }
+/* END FOOTER */
+
+/* RESPONSIVO */
+@media (max-width: 800px) {
+  .papo-note{
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+  }
+  .papo-pprt{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .papo-pprt img{
+    display: none;
+  }
+  .papo-quero {
+    grid-template-columns: 1fr;
+  }
+  .papo-quero img {
+    display: none;
+  }
+  .papo-quero p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .papo-quero a {
+    padding-top: 20px;
+    margin: 0px auto;
+  }
+#razoes-desk {
+  display: none;
+}
+#razoes-mob{
+  display: block;
+}
+  .btn-01,
+  .btn-02 {
+    
+  }
+  .footer-head {
+    padding-bottom: 40px;
+  }
+  .footer-body {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
+    text-align: center;
+    /* background-color: #6AA9FF; */
+  }
+  .footer-body a {
+    font-size: 1rem;
+  }
+  .footer-head {
+    justify-content: center;
+  }
+  .depoimentos-alunos {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .depoimentos-topo {
+    grid-template-columns: 1fr;
+  }
+}
